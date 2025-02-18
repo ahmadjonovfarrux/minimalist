@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 *::after,
 *::before {
   margin: 0;
@@ -35,9 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-//   font-family: ;
-//   font-weight: ;
-//   line-height: ;
+  font-family: "DM Sans";
 }
 
 main {
@@ -45,8 +49,8 @@ main {
 }
 
 .container {
+  max-width: 1360px;
   width: 100%;
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 30px;
