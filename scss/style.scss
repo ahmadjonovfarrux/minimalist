@@ -1,5 +1,6 @@
 @import "./vendors/normalize";
 
+@import "./pages/index";
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
@@ -11,7 +12,3 @@
 
 @import "./layout/header";
 @import "./layout/footer";
-
-h1 {
-  color: red($color: #000000);
-}

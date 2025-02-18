@@ -3,16 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website name</title>
+    <title>Text Analayze</title>
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header">
-      <h1>hello world</h1>
+      <section class="header__container">
+        <ul class="header__list">
+          <li class="header__item">Desktop</li>
+          <li class="header__item">-</li>
+          <li class="header__item">Home</li>
+          <li class="header__item">-</li>
+          <li class="header__item">Filled</li>
+          <li class="header__item">-</li>
+          <li class="header__item">Light</li>
+        </ul>
+      </section>
     </header>
     <!-- Main -->
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="logo__box">
+            <img
+              class="hero__logo__img"
+              src="./images/Logo.svg"
+              alt="image of logo"
+            />
+            <img
+              class="hero__moon__img"
+              src="./images/moonLogo.svg"
+              alt="image moon logo"
+            />
+          </div>
+          <h1 class="hero__title">Analyze your text in real-time.</h1>
+          <textarea class="hero__textBox" name="" id=""></textarea>
+          <form class="hero__form" action="">
+            <div class="checkBox__box">
+              <input type="checkbox" />
+              <label for="checkbox">Exclude Spaces</label>
+            </div>
+
+            <div class="checkBox__box">
+              <input type="checkbox" />
+              <label for="checkbox">Set Character Limit</label>
+            </div>
+          </form>
+          <div class="hero__grid__container">
+            <div class="grid__item">
+              <div class="title__box">
+                <h1 class="grid__item__title">111</h1>
+                <p class="grid__item__sub">Total Character</p>
+              </div>
+              <img
+                class="grid__item__img"
+                src="./images/first.png"
+                alt="image "
+              />
+            </div>
+            <div class="grid__item">
+              <div class="title__box">
+                <h1 class="grid__item__title">121</h1>
+                <p class="grid__item__sub">Word Count</p>
+              </div>
+              <img
+                class="grid__item__img"
+                src="./images/second.png"
+                alt="image "
+              />
+            </div>
+            <div class="grid__item">
+              <div class="title__box">
+                <h1 class="grid__item__title">131</h1>
+                <p class="grid__item__sub">Sentence Count</p>
+              </div>
+              <img
+                class="grid__item__img"
+                src="./images/third.png"
+                alt="image "
+              />
+            </div>
+          </div>
+          <h1 class="density__title">Letter Density</h1>
+          <div class="bar__container">
+            <!-- E -->
+            <span class="letter">E</span>
+            <div class="bar">
+              <div class="bar__color"></div>
+            </div>
+            <span class="letter">11</span>
+          </div>
+          <!-- I -->
+          <div class="bar__container">
+            <span class="letter">I</span>
+            <div class="bar">
+              <div class="bar__color"></div>
+            </div>
+            <span class="letter">22</span>
+          </div>
+          <!-- T -->
+          <div class="bar__container">
+            <span class="letter">T</span>
+            <div class="bar">
+              <div class="bar__color"></div>
+            </div>
+            <span class="letter">33</span>
+          </div>
+          <!-- O -->
+          <div class="bar__container">
+            <span class="letter">O</span>
+            <div class="bar">
+              <div class="bar__color"></div>
+            </div>
+            <span class="letter">44</span>
+          </div>
+          <!-- N -->
+          <div class="bar__container">
+            <span class="letter">N</span>
+            <div class="bar">
+              <div class="bar__color"></div>
+            </div>
+            <span class="letter">77</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <fooer class="footer"> </fooer>
