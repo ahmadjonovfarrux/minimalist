@@ -42,10 +42,21 @@ textarea.addEventListener("input", () => {
     spanChar.textContent = key;
     spanPersent.textContent = `${((el[key] / length) * 100).toFixed(2)}%`;
     spanCount.textContent = el[key];
-    result.append(spanChar, spanCount);
     result.classList.add("result");
+    result.append(spanChar, spanCount);
 
-    item.append(spanChar, wrapper, spanPersent);
+    item.append(spanChar, wrapper, spanPersent, result);
     list.appendChild(item);
   });
+});
+
+// black white background
+const icon = document.querySelector(".hero__moon__img");
+const header = document.querySelector(".header");
+const hero = document.querySelector(".hero");
+
+icon.addEventListener("click", () => {
+  header.classList.toggle("black__bg");
+  hero.classList.toggle("black__bg");
+  textarea.classList.toggle("text__bg");
 });
